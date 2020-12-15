@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { graphql } from "gatsby";
+import BackgroundImage from "gatsby-background-image";
 
 import Layout from "../components/Layout";
 import Content, { HTMLContent } from "../components/Content";
@@ -14,15 +15,9 @@ export const IndexPageTemplate = ({
   const PageContent = contentComponent || Content;
   return (
     <div>
-      <div
+      <BackgroundImage
         className="full-width-image margin-top-0"
-        style={{
-          backgroundImage: `url(${
-            !!image.childImageSharp ? image.childImageSharp.fluid.src : image
-          })`,
-          backgroundPosition: `center`,
-          // backgroundAttachment: `fixed`,
-        }}
+        fluid={image.childImageSharp ? image.childImageSharp.fluid : null}
       >
         <div
           style={{
@@ -48,7 +43,7 @@ export const IndexPageTemplate = ({
             {title}
           </h1>
         </div>
-      </div>
+      </BackgroundImage>
       <section className="section section--gradient">
         <div className="container">
           <div className="section">
