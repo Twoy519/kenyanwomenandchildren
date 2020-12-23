@@ -1,7 +1,7 @@
 ---
 templateKey: index-page
 title: Kenyan Women & Children
-image: /img/kwc_main_banner_cropped.png
+image: /img/kwc_banner_cropped.png
 ---
 
 # Supporting Education in The Maasai
