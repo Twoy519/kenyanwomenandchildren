@@ -1,3 +1,6 @@
+site_url: https://kenyanwomenandchildren.org
+display_url: https://kenyanwomenandchildren.org
+
 backend:
   name: git-gateway
   repo: Twoy519/kenyanwomenandchildren
@@ -15,6 +18,8 @@ public_folder: /img
 collections:
   - name: "pages"
     label: "Pages"
+    label_singular: "Page"
+    create: true
     files:
       - file: "src/pages/index.md"
         label: "Landing Page"
